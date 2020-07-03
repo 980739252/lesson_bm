@@ -6,6 +6,7 @@
 // - 正则 字符串
 //     1. arr.join()
 function createPhoneNumber(numbers) {
+    //代码的语义连贯
     return numbers.join('').replace(/(\d{3})(\d{3})(\d{4})/,'($1) $2-$3')
 }
 

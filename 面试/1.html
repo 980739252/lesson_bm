@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li+li{
+            border-left:1px solid #000;
+        }
+        ur  li{
+            color:red;
+        }
+        /* > 子选择器 */
+        ul>li{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <div>
+            <li>000000</li>
+        </div>
+    </ul>
+    <script>
+        console.log(document.querySelectorAll('li+li'))
+    </script>
+</body>
+</html>

@@ -368,5 +368,7 @@ fieldset,img{
     line-height: 13px;
     white-space: nowrap;
 }
-
+.app-qr .lnk-qr img:hover{
+    display: block;
+}
 

@@ -25,9 +25,16 @@
        语法树dom
        数据结构+算法
        编译器也是一段代码  运行
-       HTML <div>div(/div) DOM数；
-        Abstract SYntax  tree
+       HTML <div>div</div>DOM树；
+      AST  Abstract SYntax  tree
    3. 代码生成
+   JS        运行时编译
+   JAVA C++  预编译
+   编译器（compiler）
+   解释器(Interpreter)
+
+   JIT   即时编译器
+   
 
 
 

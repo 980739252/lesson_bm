@@ -1,0 +1,37 @@
+{
+  "id": "1941491",
+  "name": "知识xing'qiu",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "554489",
+      "name": "星球",
+      "font_class": "iconset0455",
+      "unicode": "e74e",
+      "unicode_decimal": 59214
+    },
+    {
+      "icon_id": "1166629",
+      "name": "动态",
+      "font_class": "duihuakuang",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "1418235",
+      "name": "我",
+      "font_class": "wo",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "7100392",
+      "name": "发现",
+      "font_class": "faxian",
+      "unicode": "e726",
+      "unicode_decimal": 59174
+    }
+  ]
+}

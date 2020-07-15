@@ -123,7 +123,7 @@ class App extends Component{
                         {list.map((item,i)=>{
                          return (
                            <div>
-                              {item.title}
+                              
                            </div>
                          )
                         })}

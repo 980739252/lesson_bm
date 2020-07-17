@@ -54,7 +54,7 @@ body {
   max-width: 540px;
   font-size: 16px;
   margin: 0 auto;
-  padding-top: 44px; /* inphone规则，header让位 */
+  padding-top: 44px;
 }
 
 .hidden,
@@ -69,4 +69,3 @@ body {
 button {
   -webkit-appearance: none;
 }
-

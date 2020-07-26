@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { HashRouter } from "react-router-dom";
 import { renderRoutes } from "react-router-config";
@@ -16,7 +15,7 @@ function App() {
     <Provider store={store}>
     <HashRouter>
       <GlobalStyle/>
-      <IconStyle/>
+      <IconStyle/>  
       { renderRoutes(routes) }
     </HashRouter> 
   </Provider>

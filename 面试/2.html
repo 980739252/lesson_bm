@@ -1,0 +1,50 @@
+<style>
+
+    .child2{
+        transform: translateY(200px)
+    }   
+    
+    </style>
+<div class="parent">
+    <div class="child1">child1 content</div>
+    <div class="child2">child2 content</div>
+    <div class="child3">child3 content</div>
+</div>
+
+
+
+
+
+let el = document.getElementById('app');
+el.style.width = (el.offsetWidth+1) + 'px';
+el.style.width = 1 + 'px
+//
+//
+<!--
+    重排/回流  ：元素的大小位置。。发生变化 
+    当通过offwidth offHeight get BoundingRect...api
+    获取元素大小位置信息的时候，游览器为了给出最实时的信息，还是会重排一次
+
+    v重绘：元素的颜色背景。。。 发生变化，
+    回流一定会触发重绘  重绘不一定会发生回流
+-->
+
+<script>
+    function Foo() {}
+    let oldName = Foo.name;
+     Foo.name = "bar";
+     console.log([oldName, Foo.name]);
+//FOO
+//FOO.name 被限制  只读的
+
+</script>
+
+
+
+let a = Foo.prototype;
+let b = new Foo();
+let c = b.prototype;
+console.log(a === c) ;
+//let c= Foo.prototype
+//let c=Object.getProptypeof(b)
+

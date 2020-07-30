@@ -26,7 +26,7 @@ const LoadingWrapper = styled.div`
       animation-delay: -0.7s;
     }
 `
-        
+
 function Loading()  {
   return (
     <LoadingWrapper>

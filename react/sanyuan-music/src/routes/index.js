@@ -10,7 +10,8 @@ import HomeLayout from '../layouts/HomeLayout';
 // import Recommend from '../application/Recommend/';
 const RecommendComponent = lazy(() => import("../application/Recommend/"))
 const SingersComponent = lazy(() => import("../application/Singers/"))
-
+const SingerComponent = lazy(() => import("./../application/Singer/"));
+const SearchComponent = lazy(() => import("./../application/Search/"));
 
 const SuspenseComponent = Component => props => {
   return (
@@ -40,12 +41,24 @@ export default [{
         {
           path: '/singers',
           component: SuspenseComponent(SingersComponent),
-            key: "singer"
+          key: "singers",
+          routes: [
+            {
+              path: "/singers/:id",
+              component: SuspenseComponent(SingerComponent)
+            }
+          ]
         },
         // {
         //   path: '/rank',
         //   component: RankComponent
         // },
+        {
+          path: "/search",
+          exact: true,
+          key: "search",
+          component: SuspenseComponent(SearchComponent)
+        }
       ]
     }
   ]

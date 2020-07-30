@@ -1,11 +1,10 @@
 import React, { useState, useRef, useEffect, memo } from 'react';
-import styled from 'styled-components';
 import Scroll from '../scroll/index'
-import { PropTypes } from 'prop-types';
+import styled from 'styled-components';
 import style from '../../assets/global-style';
+import { PropTypes } from 'prop-types';
 
 
-//样式部分
 const List = styled.div`
   display: flex;
   align-items: center;
@@ -21,6 +20,7 @@ const List = styled.div`
     vertical-align: middle;
   }
 `
+
 const ListItem = styled.span`
   flex: 0 0 auto;
   font-size: ${style["font-size-m"]};
@@ -54,18 +54,16 @@ function Horizen(props) {
   const clickHandle = (item) => {
     handleClick(item.key);
   }
+
   return (
     <Scroll direction={"horizental"} refresh={true}>
-      <div ref={Category} >
+      <div ref={Category}>
         <List>
           <span>{title}</span>
           {
             list.map((item) => {
               return (
-                <ListItem
-                  key={item.key}
-                  className={oldVal === item.key ? 'selected' : ''}
-                  onClick={() => clickHandle(item)}>
+                <ListItem key={item.key} className={oldVal === item.key ? 'selected' : ''} onClick={() => clickHandle(item)}>
                   {item.name}
                 </ListItem>
               )
@@ -73,8 +71,8 @@ function Horizen(props) {
           }
         </List>
       </div>
-    </Scroll>
-  );
+    </Scroll>  
+  )
 }
 
 Horizen.defaultProps = {

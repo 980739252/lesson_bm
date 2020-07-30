@@ -1,4 +1,4 @@
- import * as actionTypes from './constants';
+import * as actionTypes from './constants';
 
 const defaultState = {
   // 一个页面只有一个loading

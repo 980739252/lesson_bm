@@ -6,9 +6,8 @@ import * as serviceWorker from './serviceWorker';
 import fastclick from 'fastclick';
 fastclick.attach(document.body);
 
-
 ReactDOM.render(
-  <App/>,
+  <App />,
   document.getElementById('root')
 );
 

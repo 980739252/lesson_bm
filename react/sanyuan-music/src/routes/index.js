@@ -3,7 +3,7 @@
 // 二级路由 
 // /path Component 放在相应的地方<Route />
 // 嵌套
-import React, { lazy, Suspense } from 'react';
+import React, { lazy, Suspense } from 'react';//延迟加载
 import { Redirect } from 'react-router-dom';
 import BlankLayout from '../layouts/BlankLayout';
 import HomeLayout from '../layouts/HomeLayout';

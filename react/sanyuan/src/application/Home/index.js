@@ -7,7 +7,7 @@ import {
 } from './style';
 import { NavLink } from 'react-router-dom';// 利用 NavLink 组件进行路由跳转
 
-function Home (props){
+function Home (props){  
   const { route } = props;
 
   return (
@@ -23,6 +23,7 @@ function Home (props){
         <NavLink to="/rank" activeClassName="selected"><TabItem><span > 排行榜 </span></TabItem></NavLink>
       </Tab>
       { renderRoutes (route.routes) }
+      {/* renderRoutes方法只能渲染一层路由 ，功能组件在第二层，在home再次调用*/}
     </div>
   );
 }

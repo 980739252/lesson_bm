@@ -1,0 +1,80 @@
+<style>
+	div {
+		background-color: grey;
+		display: inline-block;
+		margin: 30px;
+		width: 100px;
+		height: 100px;
+		border-radius: 50px;
+		;
+	}
+
+	.green.light {
+		background-color: green;
+	}
+
+	.yellow.light {
+		background-color: yellow;
+	}
+
+	.red.light {
+		background-color: red;
+	}
+</style>
+
+
+<div class="red"></div>
+<div class="yellow"></div>
+<div class="green"></div>
+
+
+<!-- <button id="next" onclick="go();">开始</button> -->
+
+<script>
+    function green(){
+        clear()
+        const green =document.querySelector('.green');
+        green.classList.add('light');     
+       
+
+    }
+    function red(){
+        clear()
+        const red =document.querySelector('.red');
+        red.classList.add('light');
+       
+    }
+    function yellow(){
+        clear()
+        const yellow =document.querySelector('.yellow');
+        yellow.classList.add('light');
+      
+    }
+    function clear(){
+        var lights = document.getElementsByTagName("div");
+		for (var i = 0; i < 3; i++)
+			lights[i].classList.remove("light")
+
+
+    }
+    //red() 1s  yellow()2s  green() 3s  
+
+
+function sleep(time){
+    return new promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve()
+        },time)
+    })
+}
+async function loop2(){
+    for(let i =0;i<5;i++){
+         red();
+         await sleep(1000)
+         yellow();
+         await  sleep(2000);
+         green()
+         await  sleep(3000)
+    }
+}
+</script>

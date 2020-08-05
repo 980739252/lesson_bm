@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.1"
+  },
+  "name": "react-hooks-demo",
+  "description": "tsx  工作流\r .tsx React组件->webpack.config.js->awesome-typescipt-loader\r ->tsconfig.json->typescript.jsx->babel(polyfill+env+plugin 装饰器模式)->\r react DOM->webpack-dev-server html-webpack-plugin footer script\r bundle.js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

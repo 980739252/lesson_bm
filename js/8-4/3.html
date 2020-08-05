@@ -1,0 +1,33 @@
+<script>
+    // function zip() {
+    // todo
+// }
+// zip(['fred', 'barney'], [30, 40], [true, false]);
+  // => [['fred', 30, true], ['barney', 40, false]]
+
+//   function zip(arr1,arr2,arr3)
+//   {
+//       arr1.pop();
+//       arr2.pop();
+//       arr3.pop();
+//     let Arr1= arr1.concat(arr2.concat(arr3))
+//     let Arr2= [arr1.pop,arr2.pop,arr3.pop]
+
+//     return [Arr1,Arr2]
+//   }
+function zip(...args){
+    //argument   
+    let res=[]
+for(let j=0;j<args[0].length;j++){
+  if(!res[j] ) res[j]=[]
+  for(let i=0;i<args.length;i++){//所有的数据
+      
+    res[j].push(args[i][j])
+          
+      }
+  }
+  console.log(res)
+  return res;
+}
+zip(['fred', 'barney'], [30, 40], [true, false]);
+</script>

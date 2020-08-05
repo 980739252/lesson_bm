@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/980739252/lesson_bm/issues"
   },
-  "homepage": "https://github.com/980739252/lesson_bm#readme"
+  "homepage": "https://github.com/980739252/lesson_bm#readme",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.1"
+  }
 }

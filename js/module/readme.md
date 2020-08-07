@@ -1,4 +1,6 @@
 ## commonJS
+const http = require('http')
+
 导出
 module.exports = function(){}
 module.exports = {

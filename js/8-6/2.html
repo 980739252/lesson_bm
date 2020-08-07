@@ -1,0 +1,16 @@
+
+<script>
+    Array.prototype.myForeach = function(cb){
+        for(let i=0;i<this.length;i++){
+            cb(this[i],i)
+            //this指向[1,2,3]  [1,2,3].myForeach  原型链
+        }
+
+    }
+    let arr = [1,2,3];
+    arr.myForeach((item,i)=>{
+       //item循环时候的每一项
+       // i   item循环时候的索引
+       console.log(item,i)
+    })
+</script>

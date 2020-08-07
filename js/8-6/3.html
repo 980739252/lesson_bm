@@ -1,0 +1,30 @@
+<script>
+    //看代码说输出
+    window.name = 'ByteDance';
+function A() {
+    //new 过程 
+    //第一步生成一个空对象：{}
+    // {}.__proto_=A.prototype
+    //{} 添加name属性
+    //return {}
+    //我们new的时候 拿到的就是这个{}
+    console.log(this);//指向 空对象{} A.prototyper
+    // debugger;
+    console.log(this.name);
+    this.name = 123;
+}
+A.prototype.getA = function(){
+        console.log(this);
+        return this.name + 1;
+}
+A.prototype.name = 456;
+let a = new A(); //a被调用   
+//a.__proto__===A.prototype
+
+let funcA = a.getA; 
+console.log(funcA());  
+// obj_proto__ === Object.prototype
+// object.prototype._proto__=== null
+
+</script>
+

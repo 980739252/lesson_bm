@@ -1,0 +1,16 @@
+<script>
+    async function foo() {
+      await bar();
+    console.log(1);//微服务4
+   }
+async function bar() {
+ console.log(0)//1
+ Promise.resolve(3).then(console.log)//微服务3
+ return new Promise((resolve, reject) => {
+   console.log(2)//2
+   resolve();
+ })
+}
+foo()
+// 0 2  3 1
+</script>

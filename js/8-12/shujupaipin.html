@@ -1,0 +1,17 @@
+<script>
+    // 数组拍平
+let a = [1,2, [3, [4, [5]]]]
+// [1,2,3,4,5]
+function flat() {
+ // todo
+}
+function falt2(arr) {
+        while(arr.some(item=>Array.isArray(item))) {
+            arr = [].concat(...arr);
+        }
+        return arr;
+    }
+</script>
+
+
+<!-- 数组扁平化 -->

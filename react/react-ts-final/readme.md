@@ -14,3 +14,5 @@ typescript   interface   关键字
   .tsx
 2. tsconfig.json jsx -> react ts -> js
 3. babel
+
+<>泛型

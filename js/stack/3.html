@@ -1,0 +1,19 @@
+<script>
+    function resolve(baseUrl, moduleId){
+        const arr1=[];
+        const arr2=  moduleId.split("/")
+        arr2.forEach(item => {
+            if(item ===''||item === '.'){
+            // continue
+        }else if(item==='..'){
+            arr1.pop();
+        }else{
+            arr1.push(item);
+        }
+    });
+     return  '/'+ arr1.join('/')
+            
+        
+
+    }
+</script>

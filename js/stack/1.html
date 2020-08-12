@@ -1,0 +1,17 @@
+
+<script>
+var simplifyPath = function(path){
+    const arr1 = path.split("/");
+    const stack=[]
+    arr1.forEach(item => {
+        if(item ===''||item === '.'){
+            // continue
+        }else if(item==='..'){
+            stack.pop();
+        }else{
+            stack.push(item);
+        }
+    });
+     return  '/'+ stack.join('/')
+}
+</script>

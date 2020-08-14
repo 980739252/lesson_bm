@@ -1,0 +1,70 @@
+<script>
+    // document.addEventListener('click',()=>{})
+    // document.addEventListener('click',()=>{})
+    // document.addEventListener('click',()=>{})
+    // http.createServer((req,res)=>{
+    //     res.on('data',()=>{
+
+    //     })
+    // })
+    let listeners = {
+        //key 加方法
+
+    }
+    let price1 = ()=>{
+        console.log('price1')
+    }
+    let price2 = ()=>{
+        console.log('price2')
+    }
+    let blog1 = ()=>{
+        console.log('blog1')
+    }
+    let blog2 = ()=>{
+        console.log('blog2')
+        //listeners 结构和我们下面一样
+    }
+    function on(name,fn){
+        if(!listeners[name]){
+          listeners[name]=[];
+        }
+        listeners[name].push(fn);
+     
+        
+    }
+    function emit(name){
+       //已知listens结构
+       //找到name 下面所有的订阅者并执行(通知他们)
+       //console.log(listeners)
+       //可选链 ?.
+        const listen = listeners[name]||[];
+        for(let fn of listen){
+            fn();
+        }
+        listeners[name]= listen.filter(listen=>!listen.once)
+       //发布
+    }
+    function off(naem,fn){
+        let lenten = listeners[name]|| [];
+        listeners[name]=lenten.filter(listen =>listen !== fn);
+    }
+    function once(name,fn){
+        fn.once=true;
+        on(name,fn);
+    }
+    on('prcie',price1);
+    once('prcie',price2);
+    on('blog',()=>{
+        console.log('博客更新了')
+    })
+    off('price',price1);
+    emit('price')
+    setTimeout(()=>{
+        emit('blog');
+    },3000)
+    // {
+    //     'price':[price1,price2]
+    //     'blog':[blog1,blog2]
+    // }
+    //
+</script>

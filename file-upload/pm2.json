@@ -1,0 +1,8 @@
+{
+    "app":{
+        "name":"file-upload",
+        "exec":"./index.js",
+        "exec_mode":"cluster_mode",
+        "instance":"max"
+    }
+}

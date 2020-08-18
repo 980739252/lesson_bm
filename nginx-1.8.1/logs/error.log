@@ -1,0 +1,10 @@
+2020/08/17 14:40:02 [error] 3016#4028: *1 CreateFile() "F:\nginx-1.8.1/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2020/08/17 14:44:03 [error] 3016#4028: *4 CreateFile() "F:\nginx-1.8.1/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2020/08/17 14:46:18 [notice] 3256#1208: signal process started
+2020/08/17 14:46:38 [notice] 10100#9512: signal process started
+2020/08/17 14:46:38 [error] 10100#9512: CreateFile() "F:\nginx-1.8.1/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2020/08/17 15:31:47 [emerg] 7124#3708: invalid URL prefix in G:\worksplace\lesson_bm\nginx-1.8.1/conf/nginx.conf:44
+2020/08/17 15:39:14 [emerg] 8744#8752: unexpected "}" in G:\worksplace\lesson_bm\nginx-1.8.1/conf/nginx.conf:104
+2020/08/17 15:59:16 [notice] 4180#4008: signal process started
+2020/08/17 15:59:47 [notice] 6224#8000: signal process started
+2020/08/17 16:06:32 [error] 9472#2460: *13 CreateFile() "G:\worksplace\lesson_bm\nginx-1.8.1/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"

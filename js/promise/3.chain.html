@@ -1,26 +1,5 @@
-<script>
-    // [1,2,3].forEach((item, i) => {})
-    const PENDING = Symbol('PENGDING');
-    const FULFILLED = Symbol('FULFILLED');
-    const REJECTED = Symbol('REJECTED');
-    function MyPromise(fn) {
-      this.value = undefined;
-      this.onFulfilled = () => {};
-      this.status = PENDING;
-      let self = this;
-      function resolve(value) {
-        self.value = value;
-        self.status = FULFILLED;
-        console.log(value);
-        self.onFulfilled(value);
-      }
-      function reject() {}
-      fn(resolve, reject);
-    }
-    MyPromise.prototype.then = function(onFulfilled, onRejected) {
-      if (this.status === FULFILLED) onFulfilled(this.value)
-      else if (this.status === PENDING) {
-        this.onFulfilled = onFulfilled;
+
+        this.onFulfilled.push(onFulfilled);
       } else {}
     }
     new MyPromise((resolve, reject) => {
@@ -31,5 +10,9 @@
     .then((res) => {
       console.log(res);
     }, () => {})
+    .then(() => {
+  
+    })
+    //return this;
   </script>
   

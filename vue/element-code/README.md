@@ -10,4 +10,4 @@ vue 3.0 变化太大了，就学react'
 
 - linter 代码风格确保文件
   eslint 保证大家代码 风格一样
-- unit Testing E2E 测试
+- unit Testing E2E 测试 

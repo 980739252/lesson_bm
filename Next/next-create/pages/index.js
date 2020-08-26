@@ -29,6 +29,7 @@ const Home=()=>{
     Router.events.on('hashChangeComplete',(...args)=>{
         console.log('6.hashChangeComplete->路由变化结束,参数为：',...args)
     })
+    //Lazy Loading   模块moment  组件
    function gotoxioajiejie(){
        Router.push('/xiaojiejie?name=结衣')
    }

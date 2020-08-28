@@ -25,7 +25,9 @@
     let node = a1;
     function walk(){
         //浏览器有空闲的时候
-        while(true){
+        // while(true){                            
+            while(deadLine.timeRemaining()>0){
+            console.log(node.name);
             let child = node.child;
             if(child){
                 node = child;
@@ -41,6 +43,7 @@
             node = node.sibling;
         }
     }
-    walk(a1)
+    // walk()
+    requestIdleCallback(walk)
 
 </script>

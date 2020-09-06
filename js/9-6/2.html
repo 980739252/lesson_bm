@@ -1,0 +1,24 @@
+<script>
+    // 实现一个算法函数 计算数组中最大的数，假设数组中的元素都可以直接比较大小，且假设数组中至少有一个元素
+    function max(arr){
+        let ren = arr[0]
+        for(let i=0;i<arr.length;++i)
+        {
+            if(arr[i]>ren){
+                ren=arr[i]
+            }
+        }
+        return ren
+    }
+    function max1(arr){
+        let ren = arr[length-1]
+        for(let i=arr.length-1;i>-1;--i){
+            if(arr[i]>ren){
+                ren=arr[i]
+            }
+        }
+        return ren
+    }
+    
+    max1([2,3,7,1])
+</script>

@@ -1,0 +1,20 @@
+<script>
+    // 实现一个函数，能计算数组中的元素之和，假设数组元素都是数字型，而且总和不会超过数字的最大值
+    function getsum(arr){
+       let sum =0
+       for(let i=0;i<arr.length;++i){
+        sum+=arr[i]
+       }
+       return sum
+    }
+    function sum1(arr){
+        let ren=arr.length
+        if(arr.length==0){
+            return 0
+        }else if(arr.length==1){
+            return arr[0]
+        }else{
+            return arr[0]+sum1(arr.slice(1))
+        }
+    }
+</script>

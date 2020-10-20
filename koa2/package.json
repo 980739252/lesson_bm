@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "koa": "^2.13.0"
+    "ejs": "^3.1.5",
+    "koa": "^2.13.0",
+    "koa-bodyparser": "^3.2.0",
+    "koa-router": "^9.4.0",
+    "koa-views": "^6.3.0"
   },
   "devDependencies": {},
   "scripts": {
